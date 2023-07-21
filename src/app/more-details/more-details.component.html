@@ -1,0 +1,19 @@
+<div class="header-style">
+    <h2>{{ countryDetails?.nom }}</h2>
+    <button mat-raised-button color="primary" routerLink="/liste">Retour</button>
+</div>
+
+<div class="container">
+
+    <div class="left-side">
+        <p><strong>Population : </strong> {{ countryDetails?.population }}{{' M'}}</p>
+        <p><strong>Superficie : </strong> {{ countryDetails?.superficie }}{{' km²'}}</p>
+        <p><strong>Continent : </strong> {{ countryDetails?.continent }}</p>
+        <p><strong>Produit Interieur Brut : </strong> {{ countryDetails?.produitInterieurBrut }}{{' M€'}}</p>
+    </div>
+    <div class="right-side">
+        <div class="image-container">
+            <img *ngIf="countryDetails?.image" [src]="countryDetails?.image" alt="{{ countryDetails?.nom }}">
+        </div>
+    </div>
+</div>

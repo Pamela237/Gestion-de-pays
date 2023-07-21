@@ -1,0 +1,90 @@
+/* Style for the form fields */
+mat-form-field {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the form field labels */
+  .mat-form-field-label {
+    color: #444;
+    font-weight: 600;
+  }
+  
+  /* Style for the input fields */
+  input.mat-input-element {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 12px 16px;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  /* Style for the buttons */
+  .mat-dialog-actions button {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+  }
+  
+  /* Style for the Ajouter button */
+  .mat-dialog-actions button:first-child {
+    background-color: #2196F3;
+    color: #fff;
+  }
+  
+  /* Style for the Annuler button */
+  .mat-dialog-actions button:last-child {
+    background-color: #ccc;
+    color: #444;
+  }
+  
+  /* Style for the modal dialog title */
+  h1.mat-dialog-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  /* Style for the modal dialog content */
+  .mat-dialog-content {
+    padding: 30px;
+  }
+  
+  /* Style for the modal overlay */
+  .mat-dialog-container {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Style for the modal container */
+  .mat-dialog-container .mat-dialog-content {
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+  
+  /* Style for the modal close icon */
+  button[mat-dialog-close] {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    color: #444;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+  }
+  /* Style for the "Ajouter" button */
+button[type="submit"] {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+  
+  /* Style for the "Annuler" button */
+  button[mat-dialog-close] {
+    background-color: #F44336; /* Red */
+    color: white;
+  }
+  
+  
