@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { IPayService } from './pays.service.interface';
+import { IPayService } from './pays-service-interface';
 import { Observable, of } from 'rxjs';
 import { Pays } from '../models/pays';
 
@@ -12,30 +12,58 @@ export class ServicePays implements IPayService {
     {
       id: 1,
       nom: "Cameroun",
-      population: 2720,
+      population: 27,
       superficie: 475.442,
       continent: "Afrique",
-      produitInterieurBrut: 42110,
+      produitInterieurBrut: 42.110,
       image: "https://th.bing.com/th/id/R.3385e815c0ed88d4da830951e2efef2a?rik=feNf6DbM3j5HTQ&pid=ImgRaw&r=0",
     },
     {
       id: 2,
       nom: "France",
-      population: 66250,
+      population: 68,
       superficie: 549.190,
       continent: "Europe",
-      produitInterieurBrut: 2639092,
+      produitInterieurBrut: 2639.092,
       image: "https://expatra.com/wp-content/uploads/2019/07/France_department_map-768x729.jpg",
     },
     {
       id: 3,
       nom: "Sénégal",
-      population: 18412,
+      population: 18,
       superficie: 196.720,
       continent: "Afrique",
-      produitInterieurBrut: 26291,
+      produitInterieurBrut: 26.291,   
       image: "https://th.bing.com/th/id/R.55644c51e21dbdbded85513153f98c5c?rik=DzO5%2bjL7jG%2b91Q&pid=ImgRaw&r=0",
     },
+    {
+      id: 4,
+      nom: "Nigéria",
+      population: 213,
+      superficie: 923.770,
+      continent: "Afrique",
+      produitInterieurBrut: 452.971,   
+      image: "https://th.bing.com/th?id=OIP.S6Y4fCpEIKfwP_WdZDwUYwHaHZ&w=250&h=249&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2",
+    },
+    {
+      id: 5,
+      nom: "Hong-Kong",
+      population: 7,
+      superficie: 1.110,
+      continent: "Asie",
+      produitInterieurBrut: 341.784,   
+      image: "https://www.roamthegnome.com/wp-content/uploads/2020/10/image-Hong-Kong-map-of-areas.jpg",
+    },
+    {
+      id: 6,
+      nom: "Australie",
+      population: 25,
+      superficie: 7741.220,
+      continent: "Océanie",
+      produitInterieurBrut: 1614.888,   
+      image: "https://media.istockphoto.com/vectors/australia-map-illustration-vector-id577331844",
+    },
+    
   ];
 
   getPays(): Observable<Pays[]> {
@@ -48,7 +76,7 @@ export class ServicePays implements IPayService {
 
   addPays(newPays: Pays): Observable<number> {
     const id = this.mockPays.length + 1;
-    
+
     this.mockPays.push({
       ...newPays,
       id,

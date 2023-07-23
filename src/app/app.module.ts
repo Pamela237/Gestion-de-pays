@@ -12,7 +12,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { ListeDesPaysComponent } from './liste-des-pays/liste-des-pays.component';
-import { ServicePays } from './services/service-pays.service';
+import { ServicePays } from './services/pays-service';
 import { ServicePays as MockServicePays } from './services/mock-pays';
 
 @NgModule({

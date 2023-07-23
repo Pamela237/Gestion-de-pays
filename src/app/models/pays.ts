@@ -8,7 +8,7 @@ export class Pays {
     image!: string;
     [key: string]: string | number;
 
-    constructor(data: any) {
+    constructor(data: any = {}) {
         this.id = data.id;
         this.nom = data.nom;
         this.population = data.population;

@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.header input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.header button {
+    padding: 8px 16px;
+    margin-left: 10px;
+}
+.material-icons {
+    cursor: pointer;
+    font-size: 18px;
+    color: #2196F3;
+}
+
+button.mat-raised-button {
+    background-color: #2196F3;
+    color: #ffffff;
+}
+
+input[type="text"] {
+    width: 300px;
+}

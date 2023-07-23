@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Pays } from '../models/pays';
-import { ServicePays } from '../services/service-pays.service';
+import { ServicePays } from '../services/pays-service';
 
 @Component({
   selector: 'app-more-details',

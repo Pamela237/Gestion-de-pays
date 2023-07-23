@@ -1,2 +1,11 @@
-
+<div class="header">
+    <div >
+    <input type="text" [(ngModel)]="searchTerm" (input)="filterCountries()" placeholder="Rechercher..."> 
+  </div>
+   <div>
+    <button (click)="exportToCSV()">Exporter en CSV</button>
+    <button (click)="ajouterPays()" mat-raised-button color="primary">Ajouter (+)</button>
+  
+  </div>
+  </div>
   

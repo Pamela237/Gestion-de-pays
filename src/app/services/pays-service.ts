@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { IPayService } from './pays.service.interface';
+import { IPayService } from './pays-service-interface';
 import { HttpClient } from '@angular/common/http';
-import { Observable, of } from 'rxjs';
+import { Observable } from 'rxjs';
 import { Pays } from '../models/pays';
 
 @Injectable({

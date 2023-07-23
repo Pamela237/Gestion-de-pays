@@ -1,70 +1,65 @@
 <form [formGroup]="myform" (ngSubmit)="ajouterPays()">
     <h1 mat-dialog-title>{{inputdata.title}}</h1>
-    
     <div mat-dialog-content>
-        <mat-form-field  >
-            <mat-label >Nom du pays : </mat-label>
+        <mat-form-field>
+            <mat-label>Nom du pays : </mat-label>
             <input type="text" formControlName="nom" matInput>
             <div *ngIf="myform.controls.nom.errors" class="invalid-feedback">
                 <div *ngIf="myform.controls.nom.errors['required']"></div>
                 <div *ngIf="myform.controls.nom.errors['minLength']">Le nom doit avoir pas moins de 4 lettre</div>
             </div>
         </mat-form-field>
-        <mat-form-field  >
-            <mat-label >Population (M) : </mat-label>
-            <input type="number"  formControlName="population" matInput>
+        <mat-form-field>
+            <mat-label>Population (M) : </mat-label>
+            <input type="number" formControlName="population" matInput>
             <div *ngIf="myform.controls.population.errors" class="invalid-feedback">
                 <div *ngIf="myform.controls.population.errors['required']"></div>
-                <div *ngIf="myform.controls.population.errors['min']">La population doit être supérieure à 99</div>
+                <div *ngIf="myform.controls.population.errors['min']">La population doit être supérieure à 0</div>
             </div>
-
         </mat-form-field>
-        <mat-form-field  >
-            <mat-label >Superficie (km²) : </mat-label>
-            <input type="number" formControlName="superficie"  matInput>            
+        <mat-form-field>
+            <mat-label>Superficie (km²) : </mat-label>
+            <input type="number" formControlName="superficie" matInput>
             <div *ngIf="myform.controls.superficie.errors" class="invalid-feedback">
                 <div *ngIf="myform.controls.superficie.errors['required']"></div>
-                <div *ngIf="myform.controls.superficie.errors['min']">La superficie doit être supérieure à 0,43</div>
+                <div *ngIf="myform.controls.superficie.errors['min']">La superficie doit être supérieure à 0</div>
             </div>
         </mat-form-field>
         <mat-form-field>
             <mat-label>Continent : </mat-label>
             <mat-select formControlName="continent">
-              <mat-option value="Africa">Afrique</mat-option>
-              <mat-option value="Antarctica">Antarctique</mat-option>
-              <mat-option value="Asia">Asie</mat-option>
-              <mat-option value="Europe">Europe</mat-option>
-              <mat-option value="North America">Amérique du Nord</mat-option>
-              <mat-option value="Oceania">Océanie</mat-option>
-              <mat-option value="South America">Amérique du Sud</mat-option>
+                <mat-option value="Africa">Afrique</mat-option>
+                <mat-option value="Antarctica">Antarctique</mat-option>
+                <mat-option value="Asia">Asie</mat-option>
+                <mat-option value="Europe">Europe</mat-option>
+                <mat-option value="North America">Amérique du Nord</mat-option>
+                <mat-option value="Oceania">Océanie</mat-option>
+                <mat-option value="South America">Amérique du Sud</mat-option>
             </mat-select>
             <div *ngIf="myform.controls.continent.errors" class="invalid-feedback">
                 <div *ngIf="myform.controls.continent.errors['required']"></div>
-            </div>    
-          </mat-form-field>
-          
-        <mat-form-field  >
-            <mat-label >Produit Intérieur Brut (M€): </mat-label>
-            <input type="number" formControlName="produitInterieurBrut"  matInput>
+            </div>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Produit Intérieur Brut (M€): </mat-label>
+            <input type="number" formControlName="produitInterieurBrut" matInput>
             <div *ngIf="myform.controls.produitInterieurBrut.errors" class="invalid-feedback">
                 <div *ngIf="myform.controls.produitInterieurBrut.errors['required']"></div>
-                <div *ngIf="myform.controls.produitInterieurBrut.errors['min']">La population doit être supérieure à 306</div>
-            </div>    
-
+                <div *ngIf="myform.controls.produitInterieurBrut.errors['min']">La population doit être supérieure à 0
+                </div>
+            </div>
         </mat-form-field>
-        <mat-form-field  >
-            <mat-label >Image : </mat-label>
-            <input type="ref=" formControlName="image"  matInput>
+        <mat-form-field>
+            <mat-label>Image : </mat-label>
+            <input type="ref=" formControlName="image" matInput>
             <div *ngIf="myform.controls.image.errors" class="invalid-feedback">
                 <div *ngIf="myform.controls.image.errors['required']"></div>
-            </div>    
+            </div>
         </mat-form-field>
-        
     </div>
     <div mat-dialog-actions>
-        <button type="submit" mat-raised-button color="primary">Ajouter</button>
+        <button type="submit" mat-raised-button color="primary">{{ inputdata.country.id > 0 ? 'Editer' : 'Ajouter'}}
+        </button>
         <button (click)="cancelAjouter()" mat-dialog-close mat-raised-button color="warn">Annuler</button>
     </div>
 </form>
-
-  

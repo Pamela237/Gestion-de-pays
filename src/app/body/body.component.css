@@ -1,0 +1,44 @@
+  
+  .body {
+    margin: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    cursor: pointer;
+  }
+  
+  .sort-icon {
+    margin-left: 5px;
+  }
+  
+  .material-icons {
+    cursor: pointer;
+    font-size: 18px;
+    color: #2196F3;
+  }
+  
+  tr:hover {
+    background-color: #f2f2f2;
+  }
+  
+  button.mat-raised-button {
+    background-color: #2196F3;
+    color: #ffffff;
+  }
+  
+  input[type="text"] {
+    width: 300px;
+  }
+  
