@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Pays } from '../models/pays';
 import { ServicePays } from '../services/pays-service';
 
+
 @Component({
   selector: 'app-more-details',
   templateUrl: './more-details.component.html',
@@ -12,7 +13,7 @@ export class MoreDetailsComponent implements OnInit {
   countryId: number | undefined;
   countryDetails: Pays | undefined;
 
-  constructor(private route: ActivatedRoute, private servicePays: ServicePays) { }
+  constructor(private route: ActivatedRoute, private servicePays :ServicePays ) { }
 
   ngOnInit(): void {
     this.route.params.subscribe((params) => {
