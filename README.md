@@ -18,9 +18,9 @@ Ce projet est une application de gestion d'une liste de pays. Il permet d'affich
 1. Assurez-vous d'avoir Node.js et npm installés sur votre système.
 2. Clonez ce dépôt avec la commande suivante :
 
-Https : https://github.com/Pamela237/Gestion-de-pays.git
+Https : `https://github.com/Pamela237/Gestion-de-pays.git`
 
-GitHubCli : gh repo clone Pamela237/Gestion-de-pays
+GitHubCli : `gh repo clone Pamela237/Gestion-de-pays`
 
 3. Accédez au répertoire du projet : cd liste-des-pays
 
