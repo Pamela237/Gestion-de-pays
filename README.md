@@ -1,27 +1,55 @@
 # GestionDePays
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+# Projet Exercice - Liste des Pays
 
-## Development server
+Ce projet est une application de gestion d'une liste de pays. Il permet d'afficher une liste de pays, de les filtrer par nom, de trier les pays par différents critères, d'ajouter de nouveaux pays et de modifier les informations des pays existants.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Fonctionnalités
 
-## Code scaffolding
+- Affichage de la liste complète des pays avec leurs informations (nom, population, superficie, continent, PIB, image).
+- Filtrage de la liste des pays par nom à l'aide de la barre de recherche.
+- Tri des pays par nom, population, superficie, continent et PIB en ordre ascendant ou descendant.
+- Ajout de nouveaux pays avec leurs informations.
+- Modification des informations des pays existants.
+- Exportation de la liste des pays au format CSV.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
 
-## Build
+1. Assurez-vous d'avoir Node.js et npm installés sur votre système.
+2. Clonez ce dépôt avec la commande suivante :
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Https : https://github.com/Pamela237/Gestion-de-pays.git
 
-## Running unit tests
+GitHubCli : gh repo clone Pamela237/Gestion-de-pays
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. Accédez au répertoire du projet : cd liste-des-pays
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+4. Installez les dépendances en exécutant : npm install
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Démarrage de l'application
+
+Pour lancer l'application, exécutez la commande suivante : npm start ou ng serve
+
+
+L'application sera alors accessible à l'adresse suivante : `http://localhost:4200/`.
+
+## Contribution
+
+Les contributions à ce projet sont les bienvenues ! Si vous souhaitez apporter des améliorations, corriger des bogues ou ajouter de nouvelles fonctionnalités, vous pouvez ouvrir une pull request.
+
+## Auteur
+
+Ce projet a été créé par Pamela Ingrid GUEKE FOUEGUE.
+
+## Licence
+
+Ce projet est sous licence MIT. Veuillez consulter le fichier LICENSE pour plus d'informations.
+
+
+Si vous avez d'autres questions ou avez besoin d'aide supplémentaire, n'hésitez pas à demander ! Bon codage !
+
+
+
+

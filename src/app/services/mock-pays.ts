@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { IPayService } from './pays-service-interface';
+import { IPayService } from './pays-service.interface';
 import { Observable, of } from 'rxjs';
 import { Pays } from '../models/pays';
 
@@ -16,7 +16,7 @@ export class ServicePays implements IPayService {
       superficie: 475.442,
       continent: "Afrique",
       produitInterieurBrut: 42.110,
-      image: "https://th.bing.com/th/id/R.3385e815c0ed88d4da830951e2efef2a?rik=feNf6DbM3j5HTQ&pid=ImgRaw&r=0",
+      image: "https://th.bing.com/th/id/R.3385e815c0ed88d4da830951e2efef2a?rik=feNf6DbM3j5HTQ&pid=Img",
     },
     {
       id: 2,
@@ -33,8 +33,8 @@ export class ServicePays implements IPayService {
       population: 18,
       superficie: 196.720,
       continent: "Afrique",
-      produitInterieurBrut: 26.291,   
-      image: "https://th.bing.com/th/id/R.55644c51e21dbdbded85513153f98c5c?rik=DzO5%2bjL7jG%2b91Q&pid=ImgRaw&r=0",
+      produitInterieurBrut: 26.291,
+      image: "https://th.bing.com/th/id/R.55644c51e21dbdbded85513153f98c5c?rik=DzO5%2bjL7jG%2b91Q&pid",
     },
     {
       id: 4,
@@ -42,8 +42,8 @@ export class ServicePays implements IPayService {
       population: 213,
       superficie: 923.770,
       continent: "Afrique",
-      produitInterieurBrut: 452.971,   
-      image: "https://th.bing.com/th?id=OIP.S6Y4fCpEIKfwP_WdZDwUYwHaHZ&w=250&h=249&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2",
+      produitInterieurBrut: 452.971,
+      image: "https://clipground.com/images/nigeria-map-png-7.jpg",
     },
     {
       id: 5,
@@ -51,7 +51,7 @@ export class ServicePays implements IPayService {
       population: 7,
       superficie: 1.110,
       continent: "Asie",
-      produitInterieurBrut: 341.784,   
+      produitInterieurBrut: 341.784,
       image: "https://www.roamthegnome.com/wp-content/uploads/2020/10/image-Hong-Kong-map-of-areas.jpg",
     },
     {
@@ -60,10 +60,10 @@ export class ServicePays implements IPayService {
       population: 25,
       superficie: 7741.220,
       continent: "Océanie",
-      produitInterieurBrut: 1614.888,   
+      produitInterieurBrut: 1614.888,
       image: "https://media.istockphoto.com/vectors/australia-map-illustration-vector-id577331844",
     },
-    
+
   ];
 
   getPays(): Observable<Pays[]> {
